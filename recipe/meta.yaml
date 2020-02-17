@@ -1,4 +1,4 @@
-{% set version = '4.0-0' %}
+{% set version = "4.1-0" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,11 +10,11 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/memuse_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/memuse/memuse_{{ version }}.tar.gz
-  sha256: fbf8716a1388692ee439f69ac99643fa427eb100027d8911ff0fbfdcb5b6c3bc
+  sha256: 58d6d1ca5d6bd481f4ed299eff6a9d5660eb0f8db1abe54c49e144093cba72ad
 
 build:
   merge_build_host: True  # [win]
-  number: 1
+  number: 0
   rpaths:
     - lib/R/lib/
     - lib/
@@ -47,6 +47,7 @@ test:
 about:
   home: https://github.com/shinra-dev/memuse
   license: BSD 2-clause
+  license_file: LICENSE
   summary: How much ram do you need to store a 100,000 by 100,000 matrix? How much ram is your
     current R session using? How much ram do you even have? Learn the scintillating
     answer to these and many more such questions with the 'memuse' package.
