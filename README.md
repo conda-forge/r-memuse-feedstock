@@ -3,7 +3,7 @@ About r-memuse
 
 Home: https://github.com/shinra-dev/memuse
 
-Package license: BSD 2-clause
+Package license: BSD-2-Clause
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-memuse-feedstock/blob/main/LICENSE.txt)
 
